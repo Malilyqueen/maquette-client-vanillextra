@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanillextra — Vanille Premium de Madagascar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Version Switch -->
+  <div class="fixed top-4 right-4 z-50">
+    <a href="index.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+      Version Avancée
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-900">Vanillextra</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#accueil" class="text-gray-700 hover:text-gray-900">Accueil</a>
+          <a href="#boutique" class="text-gray-700 hover:text-gray-900">La Boutique</a>
+          <a href="#professionnels" class="text-gray-700 hover:text-gray-900">Espace Professionnels</a>
+          <a href="#origine" class="text-gray-700 hover:text-gray-900">L'Origine</a>
+          <a href="#recettes" class="text-gray-700 hover:text-gray-900">Recettes & Conseils</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="bg-gradient-to-r from-yellow-100 to-orange-100 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">Vanillextra</h2>
+          <p class="text-xl text-gray-700 mb-8">L'excellence de la vanille à la source. Du terroir malgache aux cuisines professionnelles.</p>
+          <div class="space-x-4">
+            <a href="#boutique" class="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors">Découvrir nos produits</a>
+            <a href="#professionnels" class="border border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-orange-100 transition-colors">Espace professionnels</a>
+          </div>
+        </div>
+        <div>
+          <img src="./images/Hero_01.jpg" alt="Gousses de vanille" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boutique -->
+  <section id="boutique" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">La Boutique</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Gousses -->
+        <div class="bg-gray-50 rounded-lg p-6 text-center">
+          <img src="./images/gousses.png" alt="Gousses de vanille" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Gousses de vanille</h3>
+          <p class="text-gray-600 mb-4">Vanille Bourbon Planifolia - Origine Madagascar - Conditionnement sous-vide</p>
+          <div class="space-y-2">
+            <button class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">Ajouter au panier</button>
+            <button class="w-full border border-orange-600 text-orange-600 py-2 rounded hover:bg-orange-100">Demander un tarif professionnel</button>
+          </div>
+        </div>
+        <!-- Poudre -->
+        <div class="bg-gray-50 rounded-lg p-6 text-center">
+          <img src="./images/poudre.png" alt="Poudre de vanille" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Graines & Poudre de vanille</h3>
+          <p class="text-gray-600 mb-4">Goût intense - Utilisation pâtisserie & restauration - Qualité constante</p>
+          <div class="space-y-2">
+            <button class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">Ajouter au panier</button>
+            <button class="w-full border border-orange-600 text-orange-600 py-2 rounded hover:bg-orange-100">Demander un devis pro</button>
+          </div>
+        </div>
+        <!-- Extrait -->
+        <div class="bg-gray-50 rounded-lg p-6 text-center">
+          <img src="./images/extrait.png" alt="Extrait de vanille" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Extrait / Essence de vanille</h3>
+          <p class="text-gray-600 mb-4">Fabrication sur commande - Concentration maîtrisée - Idéal professionnels</p>
+          <button class="w-full border border-orange-600 text-orange-600 py-2 rounded hover:bg-orange-100">Demander un devis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fiche Technique -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Fiche Technique (B2B)</h2>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <table class="w-full">
+          <thead class="bg-orange-600 text-white">
+            <tr>
+              <th class="px-6 py-3 text-left">Caractéristique</th>
+              <th class="px-6 py-3 text-left">Détail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="px-6 py-4 font-medium">Origine</td>
+              <td class="px-6 py-4">Madagascar — Région SAVA</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 font-medium">Variété</td>
+              <td class="px-6 py-4">Planifolia Bourbon</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 font-medium">Taux d'humidité</td>
+              <td class="px-6 py-4">30–35 %</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 font-medium">Taux de vanilline</td>
+              <td class="px-6 py-4">1,6 – 2,2 %</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-6 py-4 font-medium">Conditionnement</td>
+              <td class="px-6 py-4">Sous-vide</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-medium">Formats</td>
+              <td class="px-6 py-4">Sur demande</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Espace Professionnels -->
+  <section id="professionnels" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="./images/chef.png" alt="Chef professionnel" class="rounded-lg shadow-lg">
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-8">Espace Professionnels</h2>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Pourquoi travailler avec Vanillextra ?</h3>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+              Qualité constante
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+              Traçabilité garantie
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+              Commandes sur mesure
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+              Tarifs dégressifs
+            </li>
+            <li class="flex items-center">
+              <span class="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
+              Livraison rapide
+            </li>
+          </ul>
+          <button class="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors">Contactez-nous</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origine -->
+  <section id="origine" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">L'Origine</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Du terroir malgache</h3>
+          <p class="text-gray-700 mb-6">Notre vanille est cultivée dans la région SAVA de Madagascar, berceau historique de la vanille Bourbon. Chaque gousse est récoltée à la main par des producteurs locaux, garantissant une qualité exceptionnelle et un respect des traditions.</p>
+          <p class="text-gray-700">Le processus d'affinage traditionnel, combiné aux techniques modernes de conservation sous-vide, assure une fraîcheur et une saveur incomparables.</p>
+        </div>
+        <div>
+          <img src="./images/madagascar.png" alt="Madagascar" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recettes -->
+  <section id="recettes" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Recettes & Conseils</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <img src="./images/creme.png" alt="Crème brûlée" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Crème brûlée traditionnelle</h3>
+          <p class="text-gray-600">Découvrez comment utiliser nos gousses pour une crème brûlée authentique.</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/macarons.png" alt="Macarons" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Macarons vanille intense</h3>
+          <p class="text-gray-600">Une recette de macarons avec notre poudre de vanille pour un goût intense.</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/gousses-conseil.png" alt="Conseils" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Bien utiliser ses gousses</h3>
+          <p class="text-gray-600">Conseils pratiques pour tirer le meilleur de vos gousses de vanille.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Vanillextra</h3>
+          <p class="text-gray-400">L'excellence de la vanille à la source.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Navigation</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#accueil" class="hover:text-white">Accueil</a></li>
+            <li><a href="#boutique" class="hover:text-white">La Boutique</a></li>
+            <li><a href="#professionnels" class="hover:text-white">Professionnels</a></li>
+            <li><a href="#origine" class="hover:text-white">L'Origine</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+            <li><a href="#" class="hover:text-white">FAQ</a></li>
+            <li><a href="#" class="hover:text-white">Livraison</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Newsletter</h4>
+          <div class="flex">
+            <input type="email" placeholder="Votre email" class="flex-1 px-3 py-2 text-gray-900 rounded-l">
+            <button class="bg-orange-600 px-4 py-2 rounded-r hover:bg-orange-700">S'inscrire</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Vanillextra. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
