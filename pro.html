@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Professionnels — Vanillextra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Copied theme variables and helpers from index.html */
+    :root {
+      --primary: #3D2914;
+      --accent: #C4A35A;
+      --bg: #F5F0E8;
+      --surface: #FFFFFF;
+      --text: #2C2418;
+      --muted: #6B7280;
+      --dark: #1A1A1A;
+    }
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+    .font-sans { font-family: 'Montserrat', sans-serif; }
+    .bg-primary { background-color: var(--primary); }
+    .bg-accent { background-color: var(--accent); }
+    .bg-bg { background-color: var(--bg); }
+    .text-primary { color: var(--primary); }
+    .text-accent { color: var(--accent); }
+    .text-text { color: var(--text); }
+    .section-divider { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+    .btn-primary { background-color: var(--primary); color: var(--bg); }
+  </style>
+</head>
+<body class="h-full font-sans bg-bg text-text">
+  <!-- Header (same structure as index) -->
+  <header class="bg-bg shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <svg viewBox="0 0 40 40" class="w-full h-full">
+              <ellipse cx="20" cy="20" rx="18" ry="6" fill="none" stroke="#C4A35A" stroke-width="1.5" transform="rotate(-30 20 20)"/>
+              <ellipse cx="20" cy="20" rx="14" ry="4" fill="none" stroke="#3D2914" stroke-width="1" transform="rotate(-30 20 20)"/>
+              <circle cx="20" cy="20" r="2" fill="#C4A35A"/>
+            </svg>
+          </div>
+          <span class="font-serif text-2xl font-semibold text-primary tracking-wide">Vanillextra</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-primary tracking-wide">Accueil</a>
+          <a href="#produits" class="nav-link text-sm font-medium text-primary tracking-wide">La Boutique</a>
+          <a href="pro.html" class="nav-link text-sm font-medium text-primary tracking-wide">Espace Professionnels</a>
+          <a href="#origine" class="nav-link text-sm font-medium text-primary tracking-wide">L'Origine</a>
+          <a href="#recettes" class="nav-link text-sm font-medium text-primary tracking-wide">Recettes & Conseils</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="index.html#contact" class="btn-primary px-5 py-2.5 text-sm font-medium tracking-wide">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 lg:px-8 py-24">
+    <!-- Hero B2B -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16">
+      <div>
+        <div class="text-sm text-accent font-medium uppercase mb-3">PARTENARIAT B2B</div>
+        <h1 class="font-serif text-4xl text-primary font-semibold mb-4">Espace Professionnels</h1>
+        <p class="text-text/80 mb-6">Chez Vanillextra, nous accompagnons les professionnels de la gastronomie et de l’agroalimentaire dans la recherche d’une vanille Bourbon d’exception, fiable, régulière et adaptée aux usages intensifs. Notre approche répond aux exigences techniques, aromatiques et logistiques des métiers de bouche.</p>
+
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="p-4 bg-surface border rounded card-hover">
+            <h4 class="font-medium text-primary">Qualité constante</h4>
+            <p class="text-sm text-muted">Intensité aromatique élevée, richesse naturelle en vanilline</p>
+          </div>
+          <div class="p-4 bg-surface border rounded card-hover">
+            <h4 class="font-medium text-primary">Régularité des lots</h4>
+            <p class="text-sm text-muted">Homogénéité, contrôle qualité en France</p>
+          </div>
+          <div class="p-4 bg-surface border rounded card-hover">
+            <h4 class="font-medium text-primary">Formats sur mesure</h4>
+            <p class="text-sm text-muted">Sous-vide, volumes adaptés, commandes spécifiques</p>
+          </div>
+          <div class="p-4 bg-surface border rounded card-hover">
+            <h4 class="font-medium text-primary">Tarifs professionnels</h4>
+            <p class="text-sm text-muted">Remises selon volumes et partenariat long terme</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <a href="mailto:contact@vanillextra.example?subject=Demande%20de%20devis%20professionnel" class="px-6 py-3 bg-accent text-primary font-medium rounded">Demander un devis professionnel</a>
+          <a href="tel:+33123456789" class="px-6 py-3 border border-muted text-primary rounded">Contact direct</a>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Chef en cuisine" class="w-full h-96 object-cover rounded shadow-sm">
+      </div>
+    </section>
+
+    <!-- Reassurance 3 columns -->
+    <section class="mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 bg-surface border rounded text-center">
+          <div class="mb-3 text-accent">🔒</div>
+          <h3 class="font-medium text-primary mb-2">Régularité garantie</h3>
+          <p class="text-sm text-muted">Lots homogènes, sélection lot par lot, stabilité aromatique</p>
+        </div>
+        <div class="p-6 bg-surface border rounded text-center">
+          <div class="mb-3 text-accent">📦</div>
+          <h3 class="font-medium text-primary mb-2">Traçabilité & conformité</h3>
+          <p class="text-sm text-muted">Préparation en France, normes européennes, traçabilité complète</p>
+        </div>
+        <div class="p-6 bg-surface border rounded text-center">
+          <div class="mb-3 text-accent">⚙️</div>
+          <h3 class="font-medium text-primary mb-2">Conditionnements professionnels</h3>
+          <p class="text-sm text-muted">Sous-vide, volumes adaptés, commandes sur mesure</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos partenaires (2-col list) -->
+    <section class="mb-12 bg-white p-8 rounded shadow-sm">
+      <h2 class="font-serif text-2xl text-primary font-semibold mb-4">Nos partenaires</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-text">
+        <ul class="list-disc pl-5">
+          <li>Chefs & restaurants gastronomiques</li>
+          <li>Pâtissiers & artisans boulangers</li>
+          <li>Chocolatiers & confiseurs</li>
+        </ul>
+        <ul class="list-disc pl-5">
+          <li>Glaciers</li>
+          <li>Transformateurs alimentaires premium</li>
+          <li>Épiceries fines & acheteurs spécialisés</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Régularité & Fiabilité -->
+    <section class="mb-12">
+      <h3 class="font-serif text-xl text-primary font-semibold mb-3">Travailler en toute confiance</h3>
+      <p class="text-text/80 mb-4">Pour les professionnels, la constance est essentielle. Nous garantissons une stabilité aromatique et une reproductibilité optimale des recettes.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-surface border rounded">✔ Sélection lot par lot</div>
+        <div class="p-4 bg-surface border rounded">✔ Traçabilité complète</div>
+        <div class="p-4 bg-surface border rounded">✔ Conservation optimisée</div>
+        <div class="p-4 bg-surface border rounded">✔ Contrôle qualité avant expédition</div>
+      </div>
+    </section>
+
+    <!-- Approvisionnement -->
+    <section class="mb-12">
+      <h3 class="font-serif text-xl text-primary font-semibold mb-3">Approvisionnement sécurisé</h3>
+      <p class="text-text/80 mb-4">Nous accompagnons nos partenaires dans :</p>
+      <ul class="list-disc pl-5 text-text/80">
+        <li>Planification des volumes</li>
+        <li>Commandes régulières</li>
+        <li>Sécurisation des approvisionnements</li>
+        <li>Demandes spécifiques (calibre, profil aromatique)</li>
+      </ul>
+    </section>
+
+    <!-- Final CTA premium -->
+    <section class="py-12 px-8 rounded" style="background:#3D2914;color:#fff;">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="font-serif text-3xl font-semibold mb-4">Construisons un partenariat durable</h2>
+        <p class="mb-6">Vanille Bourbon d’exception cultivée à Madagascar — Filière maîtrisée — Sélection rigoureuse — Interlocuteur direct</p>
+        <div class="flex justify-center gap-4">
+          <a href="mailto:contact@vanillextra.example?subject=Demande%20de%20devis%20professionnel" class="px-6 py-3 bg-accent text-primary font-medium rounded">Demande de devis professionnel</a>
+          <a href="tel:+33123456789" class="px-6 py-3 border border-white text-white rounded">Contact direct</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo suggestions -->
+    <section class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Chef pâtissier" class="w-full h-48 object-cover rounded">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Gousses de vanille" class="w-full h-48 object-cover rounded">
+      <img src="https://images.unsplash.com/photo-1542219550-0b1d1c8c5bd6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Atelier emballage" class="w-full h-48 object-cover rounded">
+    </section>
+
+  </main>
+</body>
+</html>
